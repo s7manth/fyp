@@ -1,0 +1,7 @@
+Create a multiple choice question (MCQ) and solution that covers one or more of the following topics:
+- Fine-Tuning and Masked Language Models
+- Bidirectional Transformer Encoders
+- Training Bidirectional Encoders
+- Contextual Embeddings
+- Fine-Tuning Language Models
+- Advanced: Span-based Masking
