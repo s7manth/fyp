@@ -11,7 +11,9 @@ from typing import Optional
 
 MODEL = "gpt-3.5-turbo"
 
-load_dotenv(".env")
+load_dotenv("../.env")
+
+MODEL = "gpt-4-0125-preview"
 
 class AgenticChunker:
     def __init__(self, openai_api_key=None):

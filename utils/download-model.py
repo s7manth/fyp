@@ -25,7 +25,8 @@ local_dir = f"{MODELS_DIR}/{model_id}"
 snapshot_path = snapshot_download(
     repo_id=model_id,
     local_dir=local_dir,
-    cache_dir=cache_dir
+    cache_dir=cache_dir,
+    token=HUGGING_FACE_TOKEN
 )
 
 print(f"SUCCESS: model downloaded at {MODELS_DIR}")
