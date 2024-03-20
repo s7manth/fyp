@@ -10,7 +10,9 @@ from typing import Optional
 
 from rich import print
 
-load_dotenv(".env")
+load_dotenv("../.env")
+
+MODEL = "gpt-4-0125-preview"
 
 class AgenticChunker:
     def __init__(self, openai_api_key=None):
@@ -27,7 +29,7 @@ class AgenticChunker:
         if openai_api_key is None:
             raise ValueError("API key is not provided and not found in environment variables")
 
-        self.llm = ChatOpenAI(model='gpt-3.5-turbo', openai_api_key=openai_api_key, temperature=0)
+        self.llm = ChatOpenAI(model=MODEL, openai_api_key=openai_api_key, temperature=0)
 
     def add_propositions(self, propositions):
         for proposition in propositions:
