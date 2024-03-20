@@ -1,0 +1,105 @@
+{
+    "language": "English",
+    "filetype": "pdf",
+    "toc": [
+        [
+            1,
+            "Naive Bayes, Text Classification, and Sentiment",
+            1
+        ],
+        [
+            2,
+            "Naive Bayes Classifiers",
+            2
+        ],
+        [
+            2,
+            "Training the Naive Bayes Classifier",
+            5
+        ],
+        [
+            2,
+            "Worked example",
+            7
+        ],
+        [
+            2,
+            "Optimizing for Sentiment Analysis",
+            7
+        ],
+        [
+            2,
+            "Naive Bayes for other text classification tasks",
+            9
+        ],
+        [
+            2,
+            "Naive Bayes as a Language Model",
+            10
+        ],
+        [
+            2,
+            "Evaluation: Precision, Recall, F-measure",
+            11
+        ],
+        [
+            3,
+            "Evaluating with more than two classes",
+            13
+        ],
+        [
+            2,
+            "Test sets and Cross-validation",
+            13
+        ],
+        [
+            2,
+            "Statistical Significance Testing",
+            14
+        ],
+        [
+            3,
+            "The Paired Bootstrap Test",
+            16
+        ],
+        [
+            2,
+            "Avoiding Harms in Classification",
+            18
+        ],
+        [
+            2,
+            "Summary",
+            19
+        ],
+        [
+            2,
+            "Bibliographical and Historical Notes",
+            19
+        ],
+        [
+            2,
+            "Exercises",
+            19
+        ]
+    ],
+    "pages": 23,
+    "ocr_stats": {
+        "ocr_pages": 0,
+        "ocr_failed": 0,
+        "ocr_success": 0
+    },
+    "block_stats": {
+        "header_footer": 0,
+        "code": 3,
+        "table": 4,
+        "equations": {
+            "successful_ocr": 23,
+            "unsuccessful_ocr": 1,
+            "equations": 24
+        }
+    },
+    "postprocess_stats": {
+        "edit": {}
+    }
+}

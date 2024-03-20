@@ -1,0 +1,145 @@
+{
+    "language": "English",
+    "filetype": "pdf",
+    "toc": [
+        [
+            1,
+            "Transformers and Large Language Models",
+            1
+        ],
+        [
+            2,
+            "The Transformer: A Self-Attention Network",
+            2
+        ],
+        [
+            3,
+            "Transformers: the intuition",
+            3
+        ],
+        [
+            3,
+            "Causal or backward-looking self-attention",
+            4
+        ],
+        [
+            3,
+            "Self-attention more formally",
+            5
+        ],
+        [
+            3,
+            "Parallelizing self-attention using a single matrix X",
+            7
+        ],
+        [
+            3,
+            "Masking out the future",
+            8
+        ],
+        [
+            2,
+            "Multihead Attention",
+            9
+        ],
+        [
+            2,
+            "Transformer Blocks",
+            9
+        ],
+        [
+            2,
+            "The Residual Stream view of the Transformer Block",
+            12
+        ],
+        [
+            2,
+            "The input: embeddings for token and position",
+            14
+        ],
+        [
+            2,
+            "The Language Modeling Head",
+            16
+        ],
+        [
+            2,
+            "Large Language Models with Transformers",
+            19
+        ],
+        [
+            2,
+            "Large Language Models: Generation by Sampling",
+            22
+        ],
+        [
+            3,
+            "Top-k sampling",
+            23
+        ],
+        [
+            3,
+            "Nucleus or top-p sampling",
+            24
+        ],
+        [
+            3,
+            "Temperature sampling",
+            24
+        ],
+        [
+            2,
+            "Large Language Models: Training Transformers",
+            25
+        ],
+        [
+            3,
+            "Self-supervised training algorithm",
+            25
+        ],
+        [
+            3,
+            "Training corpora for large language models",
+            26
+        ],
+        [
+            3,
+            "Scaling laws",
+            26
+        ],
+        [
+            2,
+            "Potential Harms from Language Models",
+            27
+        ],
+        [
+            2,
+            "Summary",
+            28
+        ],
+        [
+            2,
+            "Bibliographical and Historical Notes",
+            28
+        ]
+    ],
+    "pages": 30,
+    "ocr_stats": {
+        "ocr_pages": 0,
+        "ocr_failed": 0,
+        "ocr_success": 0
+    },
+    "block_stats": {
+        "header_footer": 0,
+        "code": 0,
+        "table": 0,
+        "equations": {
+            "successful_ocr": 22,
+            "unsuccessful_ocr": 0,
+            "equations": 22
+        }
+    },
+    "postprocess_stats": {
+        "edit": {}
+    }
+}

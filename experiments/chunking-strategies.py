@@ -10,31 +10,33 @@ from dotenv import load_dotenv
 
 load_dotenv(".env")
 
-local_llm = ChatOllama(model="mistral")
+MODEL = "gpt-4-0125-preview"
 
-# RAG
-def rag(chunks, collection_name):
-    vectorstore = Chroma.from_documents(
-        documents=documents,
-        collection_name=collection_name,
-        embedding=embeddings.ollama.OllamaEmbeddings(model='nomic-embed-text'),
-    )
-    retriever = vectorstore.as_retriever()
+# local_llm = ChatOllama(model="mistral")
 
-    prompt_template = """Answer the question based only on the following context:
-    {context}
-    Question: {question}
-    """
-    prompt = ChatPromptTemplate.from_template(prompt_template)
+# # RAG
+# def rag(chunks, collection_name):
+#     vectorstore = Chroma.from_documents(
+#         documents=documents,
+#         collection_name=collection_name,
+#         embedding=embeddings.ollama.OllamaEmbeddings(model='nomic-embed-text'),
+#     )
+#     retriever = vectorstore.as_retriever()
 
-    chain = (
-        {"context": retriever, "question": RunnablePassthrough()}
-        | prompt
-        | local_llm
-        | StrOutputParser()
-    )
-    result = chain.invoke("What is the use of Text Splitting?")
-    print(result)
+#     prompt_template = """Answer the question based only on the following context:
+#     {context}
+#     Question: {question}
+#     """
+#     prompt = ChatPromptTemplate.from_template(prompt_template)
+
+#     chain = (
+#         {"context": retriever, "question": RunnablePassthrough()}
+#         | prompt
+#         | local_llm
+#         | StrOutputParser()
+#     )
+#     result = chain.invoke("What is the use of Text Splitting?")
+#     print(result)
 
 with open("./data/cleaned/2.txt", "r") as file:
     text = file.read()
@@ -150,7 +152,7 @@ from langchain_core.pydantic_v1 import BaseModel
 from langchain import hub
 
 obj = hub.pull("wfh/proposal-indexing")
-llm = ChatOpenAI(model='gpt-3.5-turbo')
+llm = ChatOpenAI(model=MODEL)
 runnable = obj | llm
 
 class Sentences(BaseModel):
@@ -165,6 +167,7 @@ def get_propositions(text):
     propositions = extraction_chain.invoke(runnable_output)["text"][0].sentences
     return propositions
 
+text = text.strip()
 paragraphs = text.split("\n\n")
 
 text_propositions = []
@@ -172,6 +175,8 @@ for i, para in enumerate(paragraphs):
     propositions = get_propositions(para)
     text_propositions.extend(propositions)
     print (f"Done with {i}")
+
+print(text_propositions)
 
 print (f"You have {len(text_propositions)} propositions")
 # print(text_propositions[:10])
@@ -184,5 +189,8 @@ ac.add_propositions(text_propositions)
 print(ac.pretty_print_chunks())
 chunks = ac.get_chunks(get_type='list_of_strings')
 print(chunks)
+
 documents = [Document(page_content=chunk, metadata={"source": "local"}) for chunk in chunks]
-rag(documents, "agentic-chunks")
+
+print(documents)
+# rag(documents, "agentic-chunks")

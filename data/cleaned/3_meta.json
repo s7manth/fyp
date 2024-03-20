@@ -1,0 +1,115 @@
+{
+    "language": "English",
+    "filetype": "pdf",
+    "toc": [
+        [
+            1,
+            "N-gram Language Models",
+            1
+        ],
+        [
+            2,
+            "N-Grams",
+            2
+        ],
+        [
+            2,
+            "Evaluating Language Models: Training and Test Sets",
+            7
+        ],
+        [
+            2,
+            "Evaluating Language Models: Perplexity",
+            8
+        ],
+        [
+            2,
+            "Sampling sentences from a language model",
+            11
+        ],
+        [
+            2,
+            "Generalization and Zeros",
+            11
+        ],
+        [
+            2,
+            "Smoothing",
+            14
+        ],
+        [
+            3,
+            "Laplace Smoothing",
+            15
+        ],
+        [
+            3,
+            "Add-k smoothing",
+            17
+        ],
+        [
+            3,
+            "Backoff and Interpolation",
+            17
+        ],
+        [
+            2,
+            "Huge Language Models and Stupid Backoff",
+            18
+        ],
+        [
+            2,
+            "Advanced: Kneser-Ney Smoothing",
+            20
+        ],
+        [
+            3,
+            "Absolute Discounting",
+            20
+        ],
+        [
+            3,
+            "Kneser-Ney Discounting",
+            21
+        ],
+        [
+            2,
+            "Advanced: Perplexity's Relation to Entropy",
+            23
+        ],
+        [
+            2,
+            "Summary",
+            26
+        ],
+        [
+            2,
+            "Bibliographical and Historical Notes",
+            26
+        ],
+        [
+            2,
+            "Exercises",
+            26
+        ]
+    ],
+    "pages": 30,
+    "ocr_stats": {
+        "ocr_pages": 0,
+        "ocr_failed": 0,
+        "ocr_success": 0
+    },
+    "block_stats": {
+        "header_footer": 0,
+        "code": 6,
+        "table": 8,
+        "equations": {
+            "successful_ocr": 46,
+            "unsuccessful_ocr": 2,
+            "equations": 48
+        }
+    },
+    "postprocess_stats": {
+        "edit": {}
+    }
+}

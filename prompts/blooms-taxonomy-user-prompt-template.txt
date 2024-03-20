@@ -1,0 +1,4 @@
+Create a multiple choice question (MCQ) and solution that covers one or more of the following topics:
+{topics}
+
+The question should have the learning objective {taxonomy} from the Revised Bloom’s Taxonomy.

@@ -1,0 +1,150 @@
+{
+    "language": "English",
+    "filetype": "pdf",
+    "toc": [
+        [
+            1,
+            "Logistic Regression",
+            1
+        ],
+        [
+            2,
+            "The sigmoid function",
+            2
+        ],
+        [
+            2,
+            "Classification with Logistic Regression",
+            4
+        ],
+        [
+            3,
+            "Sentiment Classification",
+            4
+        ],
+        [
+            3,
+            "Other classification tasks and features",
+            5
+        ],
+        [
+            3,
+            "Processing many examples at once",
+            7
+        ],
+        [
+            3,
+            "Choosing a classifier",
+            8
+        ],
+        [
+            2,
+            "Multinomial logistic regression",
+            8
+        ],
+        [
+            3,
+            "Softmax",
+            9
+        ],
+        [
+            3,
+            "Applying softmax in logistic regression",
+            9
+        ],
+        [
+            3,
+            "Features in Multinomial Logistic Regression",
+            11
+        ],
+        [
+            2,
+            "Learning in Logistic Regression",
+            11
+        ],
+        [
+            2,
+            "The cross-entropy loss function",
+            12
+        ],
+        [
+            2,
+            "Gradient Descent",
+            13
+        ],
+        [
+            3,
+            "The Gradient for Logistic Regression",
+            16
+        ],
+        [
+            3,
+            "The Stochastic Gradient Descent Algorithm",
+            16
+        ],
+        [
+            3,
+            "Working through an example",
+            16
+        ],
+        [
+            3,
+            "Mini-batch training",
+            18
+        ],
+        [
+            2,
+            "Regularization",
+            19
+        ],
+        [
+            2,
+            "Learning in Multinomial Logistic Regression",
+            20
+        ],
+        [
+            2,
+            "Interpreting models",
+            21
+        ],
+        [
+            2,
+            "Advanced: Deriving the Gradient Equation",
+            22
+        ],
+        [
+            2,
+            "Summary",
+            23
+        ],
+        [
+            2,
+            "Bibliographical and Historical Notes",
+            23
+        ],
+        [
+            2,
+            "Exercises",
+            23
+        ]
+    ],
+    "pages": 25,
+    "ocr_stats": {
+        "ocr_pages": 0,
+        "ocr_failed": 0,
+        "ocr_success": 0
+    },
+    "block_stats": {
+        "header_footer": 0,
+        "code": 0,
+        "table": 2,
+        "equations": {
+            "successful_ocr": 55,
+            "unsuccessful_ocr": 4,
+            "equations": 59
+        }
+    },
+    "postprocess_stats": {
+        "edit": {}
+    }
+}

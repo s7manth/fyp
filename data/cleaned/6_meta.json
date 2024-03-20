@@ -1,0 +1,140 @@
+{
+    "language": "English",
+    "filetype": "pdf",
+    "toc": [
+        [
+            1,
+            "Vector Semantics and Embeddings",
+            1
+        ],
+        [
+            2,
+            "Lexical Semantics",
+            1
+        ],
+        [
+            2,
+            "Vector Semantics",
+            5
+        ],
+        [
+            2,
+            "Words and Vectors",
+            6
+        ],
+        [
+            3,
+            "Vectors and documents",
+            6
+        ],
+        [
+            3,
+            "Words as vectors: document dimensions",
+            8
+        ],
+        [
+            3,
+            "Words as vectors: word dimensions",
+            8
+        ],
+        [
+            2,
+            "Cosine for measuring similarity",
+            10
+        ],
+        [
+            2,
+            "TF-IDF: Weighing terms in the vector",
+            11
+        ],
+        [
+            2,
+            "Pointwise Mutual Information (PMI)",
+            14
+        ],
+        [
+            2,
+            "Applications of the tf-idf or PPMI vector models",
+            16
+        ],
+        [
+            2,
+            "Word2vec",
+            17
+        ],
+        [
+            3,
+            "The classifier",
+            18
+        ],
+        [
+            3,
+            "Learning skip-gram embeddings",
+            20
+        ],
+        [
+            3,
+            "Other kinds of static embeddings",
+            23
+        ],
+        [
+            2,
+            "Visualizing Embeddings",
+            23
+        ],
+        [
+            2,
+            "Semantic properties of embeddings",
+            24
+        ],
+        [
+            3,
+            "Embeddings and Historical Semantics",
+            26
+        ],
+        [
+            2,
+            "Bias and Embeddings",
+            26
+        ],
+        [
+            2,
+            "Evaluating Vector Models",
+            27
+        ],
+        [
+            2,
+            "Summary",
+            28
+        ],
+        [
+            2,
+            "Bibliographical and Historical Notes",
+            28
+        ],
+        [
+            2,
+            "Exercises",
+            28
+        ]
+    ],
+    "pages": 34,
+    "ocr_stats": {
+        "ocr_pages": 0,
+        "ocr_failed": 0,
+        "ocr_success": 0
+    },
+    "block_stats": {
+        "header_footer": 0,
+        "code": 11,
+        "table": 10,
+        "equations": {
+            "successful_ocr": 28,
+            "unsuccessful_ocr": 0,
+            "equations": 28
+        }
+    },
+    "postprocess_stats": {
+        "edit": {}
+    }
+}
