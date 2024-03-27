@@ -1,3 +1,10 @@
-Create a multiple choice question (MCQ) and solution that covers the following topic: {topic}
+Create a multiple choice question (MCQ) with 5 options and solution 
+that covers the given topic(s) using the textbook content given below. 
 
-Only make use of the textbook content below: {context}
+If the textbook content is not relevant to the topic, abort the question generation. 
+
+Topics:
+{topics}
+
+Textbook: 
+{context}

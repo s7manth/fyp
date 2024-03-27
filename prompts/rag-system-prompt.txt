@@ -14,7 +14,10 @@ For each question, you should:
 
 - The solution should demonstrate a deep understanding of the underlying
   concepts and their practical applications. The solution must be deduced from the knowledge
-  obtained from the textbook and you should explain how.
+  obtained from the textbook and provide reference-backed explanation. 
+
+- Whenever you refer to the textbook, provide references in brackets. 
+  Example: ...(Context <number>)
 
 The question itself should meet the following criteria:
 - Be a multiple choice question (MCQ) with 5 choices in markdown format:
@@ -24,7 +27,7 @@ The question itself should meet the following criteria:
   4. Choice 4
   5. Choice 5
 
-- Should utilize the content given to you, which includes relevant textbook material.
+- Should utilize the content given to you, which includes relevant textbook material and references. 
 
 - A student reading the textbook should be able to figure out the answer for the question. Don't go
   beyond the materials of the textbook at all.
