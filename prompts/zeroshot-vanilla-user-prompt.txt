@@ -1,12 +1,6 @@
-Create a multiple choice question (MCQ) with 5 options and solution that covers one or more of the following topics:
-- Logistic Regression
-- The sigmoid function
-- Classification with Logistic Regression
-- Multinomial logistic regression
-- Learning in Logistic Regression
-- The cross-entropy loss function
-- Gradient Descent
-- Regularization
-- Learning in Multinomial Logistic Regression
-- Interpreting models
-- Advanced: Deriving the Gradient Equation
+Create a multiple choice question (MCQ) and solution that covers one or more of the following topics:
+- Part-of-Speech Tagging
+- Named Entities and Named Entity Tagging
+- HMM Part-of-Speech Tagging
+- Conditional Random Fields (CRFs)
+- Evaluation of Named Entity Recognition

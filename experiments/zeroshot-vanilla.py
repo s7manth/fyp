@@ -7,13 +7,13 @@ Description: zero shot prompting using openai api
 MODEL = "gpt-4-0125-preview"
 
 SYSTEM_PROMPT = "./prompts/zeroshot-vanilla-system-prompt.txt"
-USER_PROMPT = "./prompts/zeroshot-vanilla-user-prompt-template.txt"
+USER_PROMPT = "./prompts/zeroshot-vanilla-user-prompt.txt"
 
 # TEMPERATURE = 1.0
 TOP_P = 0.9
 MAX_TOKENS = 4096
 
-RESPONSE = lambda timestamp: f"./responsebuffers/zeroshot-vanilla-gpt4/test/{timestamp}.md"
+RESPONSE = lambda timestamp: f"./responsebuffers/zeroshot-vanilla-gpt4/10/{timestamp}.md"
 
 import openai
 import os

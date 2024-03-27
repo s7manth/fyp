@@ -1,16 +1,16 @@
 import streamlit as st
 
-st.set_page_config(page_title="Generate QnA", page_icon="🔥")
-st.write("# Let's Generate QnA! 👋")
+st.set_page_config(page_title="Selene Question Generation", page_icon="🔥")
+
+st.write("# Welcome to Selene! 👋")
 
 st.markdown(
-    f"""
-    This application serves as the place for demonstration of different experiments for
-    CP4101, BComp Dissertation.
+  """
+  This is a pedagogical tool aiming to help students learn basics and different inference methods concerning propsitional logic.
 
-    Currently available:
+  Feel free to explore the application further by going through the ***Guide*** on the left sidebar.
+  The actual engine is in ***Inference Engine***, which is also accessible using the left sidebar.
 
-
-    Thank you for visiting the website.
-    """
+  If you have any feedback regarding the application, please fill in this form [here](<form-link>).
+  """
 )
