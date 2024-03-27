@@ -1,0 +1,145 @@
+{
+    "language": "English",
+    "filetype": "pdf",
+    "toc": [
+        [
+            1,
+            "Information Extraction: Relations, Events, and Time",
+            1
+        ],
+        [
+            2,
+            "Relation Extraction",
+            2
+        ],
+        [
+            2,
+            "Relation Extraction Algorithms",
+            4
+        ],
+        [
+            3,
+            "Using Patterns to Extract Relations",
+            4
+        ],
+        [
+            3,
+            "Relation Extraction via Supervised Learning",
+            5
+        ],
+        [
+            3,
+            "Semisupervised Relation Extraction via Bootstrapping",
+            7
+        ],
+        [
+            3,
+            "Distant Supervision for Relation Extraction",
+            8
+        ],
+        [
+            3,
+            "Unsupervised Relation Extraction",
+            10
+        ],
+        [
+            3,
+            "Evaluation of Relation Extraction",
+            12
+        ],
+        [
+            2,
+            "Extracting Events",
+            12
+        ],
+        [
+            2,
+            "Representing Time",
+            13
+        ],
+        [
+            3,
+            "Reichenbach's reference point",
+            14
+        ],
+        [
+            2,
+            "Representing Aspect",
+            16
+        ],
+        [
+            2,
+            "Temporally Annotated Datasets: TimeBank",
+            17
+        ],
+        [
+            2,
+            "Automatic Temporal Analysis",
+            18
+        ],
+        [
+            3,
+            "Extracting Temporal Expressions",
+            18
+        ],
+        [
+            3,
+            "Temporal Normalization",
+            19
+        ],
+        [
+            3,
+            "Temporal Ordering of Events",
+            21
+        ],
+        [
+            2,
+            "Template Filling",
+            22
+        ],
+        [
+            3,
+            "Machine Learning Approaches to Template Filling",
+            22
+        ],
+        [
+            3,
+            "Earlier Finite-State Template-Filling Systems",
+            23
+        ],
+        [
+            2,
+            "Summary",
+            24
+        ],
+        [
+            2,
+            "Bibliographical and Historical Notes",
+            24
+        ],
+        [
+            2,
+            "Exercises",
+            24
+        ]
+    ],
+    "pages": 28,
+    "ocr_stats": {
+        "ocr_pages": 0,
+        "ocr_failed": 0,
+        "ocr_success": 0
+    },
+    "block_stats": {
+        "header_footer": 0,
+        "code": 2,
+        "table": 11,
+        "equations": {
+            "successful_ocr": 5,
+            "unsuccessful_ocr": 0,
+            "equations": 5
+        }
+    },
+    "postprocess_stats": {
+        "edit": {}
+    }
+}

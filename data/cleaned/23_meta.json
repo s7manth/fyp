@@ -1,0 +1,120 @@
+{
+    "language": "English",
+    "filetype": "pdf",
+    "toc": [
+        [
+            1,
+            "Discourse Coherence",
+            1
+        ],
+        [
+            2,
+            "Coherence Relations",
+            3
+        ],
+        [
+            3,
+            "Rhetorical Structure Theory",
+            3
+        ],
+        [
+            3,
+            "Penn Discourse TreeBank (PDTB)",
+            5
+        ],
+        [
+            2,
+            "Discourse Structure Parsing",
+            6
+        ],
+        [
+            3,
+            "EDU segmentation for RST parsing",
+            7
+        ],
+        [
+            3,
+            "RST parsing",
+            7
+        ],
+        [
+            3,
+            "PDTB discourse parsing",
+            9
+        ],
+        [
+            2,
+            "Centering and Entity-Based Coherence",
+            10
+        ],
+        [
+            3,
+            "Centering",
+            10
+        ],
+        [
+            3,
+            "Entity Grid model",
+            12
+        ],
+        [
+            3,
+            "Evaluating Neural and Entity-based coherence",
+            14
+        ],
+        [
+            2,
+            "Representation learning models for local coherence",
+            14
+        ],
+        [
+            2,
+            "Global Coherence",
+            16
+        ],
+        [
+            3,
+            "Argumentation Structure",
+            17
+        ],
+        [
+            3,
+            "The structure of scientific discourse",
+            18
+        ],
+        [
+            2,
+            "Summary",
+            19
+        ],
+        [
+            2,
+            "Bibliographical and Historical Notes",
+            19
+        ],
+        [
+            2,
+            "Exercises",
+            19
+        ]
+    ],
+    "pages": 25,
+    "ocr_stats": {
+        "ocr_pages": 0,
+        "ocr_failed": 0,
+        "ocr_success": 0
+    },
+    "block_stats": {
+        "header_footer": 0,
+        "code": 10,
+        "table": 7,
+        "equations": {
+            "successful_ocr": 4,
+            "unsuccessful_ocr": 3,
+            "equations": 7
+        }
+    },
+    "postprocess_stats": {
+        "edit": {}
+    }
+}

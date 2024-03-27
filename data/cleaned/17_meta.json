@@ -1,0 +1,125 @@
+{
+    "language": "English",
+    "filetype": "pdf",
+    "toc": [
+        [
+            1,
+            "Context-Free Grammars and Constituency Parsing",
+            1
+        ],
+        [
+            2,
+            "Constituency",
+            2
+        ],
+        [
+            2,
+            "Context-Free Grammars",
+            2
+        ],
+        [
+            3,
+            "Formal Definition of Context-Free Grammar",
+            6
+        ],
+        [
+            2,
+            "Treebanks",
+            6
+        ],
+        [
+            2,
+            "Grammar Equivalence and Normal Form",
+            8
+        ],
+        [
+            2,
+            "Ambiguity",
+            9
+        ],
+        [
+            2,
+            "CKY Parsing: A Dynamic Programming Approach",
+            11
+        ],
+        [
+            3,
+            "Conversion to Chomsky Normal Form",
+            11
+        ],
+        [
+            3,
+            "CKY Recognition",
+            12
+        ],
+        [
+            3,
+            "CKY Parsing",
+            14
+        ],
+        [
+            3,
+            "CKY in Practice",
+            15
+        ],
+        [
+            2,
+            "Span-Based Neural Constituency Parsing",
+            17
+        ],
+        [
+            3,
+            "Computing Scores for a Span",
+            17
+        ],
+        [
+            3,
+            "Integrating Span Scores into a Parse",
+            18
+        ],
+        [
+            2,
+            "Evaluating Parsers",
+            19
+        ],
+        [
+            2,
+            "Heads and Head-Finding",
+            20
+        ],
+        [
+            2,
+            "Summary",
+            21
+        ],
+        [
+            2,
+            "Bibliographical and Historical Notes",
+            21
+        ],
+        [
+            2,
+            "Exercises",
+            21
+        ]
+    ],
+    "pages": 26,
+    "ocr_stats": {
+        "ocr_pages": 0,
+        "ocr_failed": 0,
+        "ocr_success": 0
+    },
+    "block_stats": {
+        "header_footer": 0,
+        "code": 5,
+        "table": 10,
+        "equations": {
+            "successful_ocr": 12,
+            "unsuccessful_ocr": 0,
+            "equations": 12
+        }
+    },
+    "postprocess_stats": {
+        "edit": {}
+    }
+}

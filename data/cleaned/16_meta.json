@@ -1,0 +1,145 @@
+{
+    "language": "English",
+    "filetype": "pdf",
+    "toc": [
+        [
+            1,
+            "Automatic Speech Recognition and Text-to-Speech",
+            1
+        ],
+        [
+            2,
+            "The Automatic Speech Recognition Task",
+            2
+        ],
+        [
+            2,
+            "Feature Extraction for ASR: Log Mel Spectrum",
+            4
+        ],
+        [
+            3,
+            "Sampling and Quantization",
+            4
+        ],
+        [
+            3,
+            "Windowing",
+            6
+        ],
+        [
+            3,
+            "Discrete Fourier Transform",
+            7
+        ],
+        [
+            3,
+            "Mel Filter Bank and Log",
+            8
+        ],
+        [
+            2,
+            "Speech Recognition Architecture",
+            9
+        ],
+        [
+            3,
+            "Learning",
+            11
+        ],
+        [
+            2,
+            "CTC",
+            11
+        ],
+        [
+            3,
+            "CTC Inference",
+            13
+        ],
+        [
+            3,
+            "CTC Training",
+            14
+        ],
+        [
+            3,
+            "Combining CTC and Encoder-Decoder",
+            15
+        ],
+        [
+            3,
+            "Streaming Models: RNN-T for improving CTC",
+            15
+        ],
+        [
+            2,
+            "ASR Evaluation: Word Error Rate",
+            16
+        ],
+        [
+            2,
+            "TTS",
+            18
+        ],
+        [
+            3,
+            "TTS Preprocessing: Text normalization",
+            19
+        ],
+        [
+            3,
+            "TTS: Spectrogram prediction",
+            20
+        ],
+        [
+            3,
+            "TTS: Vocoding",
+            21
+        ],
+        [
+            3,
+            "TTS Evaluation",
+            23
+        ],
+        [
+            2,
+            "Other Speech Tasks",
+            23
+        ],
+        [
+            2,
+            "Summary",
+            24
+        ],
+        [
+            2,
+            "Bibliographical and Historical Notes",
+            24
+        ],
+        [
+            2,
+            "Exercises",
+            24
+        ]
+    ],
+    "pages": 30,
+    "ocr_stats": {
+        "ocr_pages": 0,
+        "ocr_failed": 0,
+        "ocr_success": 0
+    },
+    "block_stats": {
+        "header_footer": 0,
+        "code": 4,
+        "table": 2,
+        "equations": {
+            "successful_ocr": 24,
+            "unsuccessful_ocr": 2,
+            "equations": 26
+        }
+    },
+    "postprocess_stats": {
+        "edit": {}
+    }
+}

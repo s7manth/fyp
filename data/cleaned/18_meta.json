@@ -1,0 +1,115 @@
+{
+    "language": "English",
+    "filetype": "pdf",
+    "toc": [
+        [
+            1,
+            "Dependency Parsing",
+            1
+        ],
+        [
+            2,
+            "Dependency Relations",
+            2
+        ],
+        [
+            3,
+            "Dependency Formalisms",
+            3
+        ],
+        [
+            3,
+            "Projectivity",
+            4
+        ],
+        [
+            3,
+            "Dependency Treebanks",
+            5
+        ],
+        [
+            2,
+            "Transition-Based Dependency Parsing",
+            6
+        ],
+        [
+            3,
+            "Creating an Oracle",
+            9
+        ],
+        [
+            3,
+            "A feature-based classifier",
+            11
+        ],
+        [
+            3,
+            "A neural classifier",
+            12
+        ],
+        [
+            3,
+            "Advanced Methods in Transition-Based Parsing",
+            13
+        ],
+        [
+            2,
+            "Graph-Based Dependency Parsing",
+            15
+        ],
+        [
+            3,
+            "Parsing via finding the maximum spanning tree",
+            16
+        ],
+        [
+            3,
+            "A feature-based algorithm for assigning scores",
+            18
+        ],
+        [
+            3,
+            "A neural algorithm for assigning scores",
+            19
+        ],
+        [
+            2,
+            "Evaluation",
+            21
+        ],
+        [
+            2,
+            "Summary",
+            22
+        ],
+        [
+            2,
+            "Bibliographical and Historical Notes",
+            22
+        ],
+        [
+            2,
+            "Exercises",
+            22
+        ]
+    ],
+    "pages": 26,
+    "ocr_stats": {
+        "ocr_pages": 0,
+        "ocr_failed": 0,
+        "ocr_success": 0
+    },
+    "block_stats": {
+        "header_footer": 0,
+        "code": 7,
+        "table": 11,
+        "equations": {
+            "successful_ocr": 13,
+            "unsuccessful_ocr": 0,
+            "equations": 13
+        }
+    },
+    "postprocess_stats": {
+        "edit": {}
+    }
+}
