@@ -51,7 +51,7 @@ completions = []
 
 async def waiting_code(task, tries):
     try:
-        ans = await asyncio.wait_for(task, timeout=15)
+        ans = await asyncio.wait_for(task, timeout=20)
         return ans
     except:
         tries += 1
@@ -64,11 +64,13 @@ async def waiting_code(task, tries):
             print("ERROR: failed waiting")
             return []
 
+NUMBER_OF_COMPLETIONS_PER_TOPIC = 1
 async def main():
     tasks = []
-    for tid, ts in tqdm(islice(topics.items(), 16, 17)):
-        print(ts)
-        for _ in range(11):
+    tids = []
+    for tid, ts in islice(topics.items(), 15, 17):
+        print(f"INFO: generating for topics {ts}")
+        for _ in range(NUMBER_OF_COMPLETIONS_PER_TOPIC):
             await asyncio.sleep(1)
             tasks.append(
                 asyncio.create_task(
@@ -87,11 +89,15 @@ async def main():
                     )
                 )
             )
+            tids.append(tid)
 
     try:
-        for coro in tqdm(tasks, total=len(tasks)):
+        for coro, tid in tqdm(zip(tasks, tids), total=len(tasks)):
             completion = await waiting_code(coro, 0)
-            completions.append(completion)
+            completions.append({
+                "completion": completion,
+                "tid": tid
+            })
 
         return completions
     except:
@@ -100,11 +106,14 @@ async def main():
 loop = asyncio.new_event_loop()
 completions = loop.run_until_complete(main())
 
-for i, completion in enumerate(completions):
+for i, cobj in enumerate(completions):
+    completion = cobj["completion"]
+    tid = cobj["tid"]
+
     if completion == []: continue
 
     response = str(completion.choices[0].message.content)
-    response_file = RESPONSE((datetime.now() + timedelta(minutes=i)).strftime("%Y-%m-%d %H%M"), 21)
+    response_file = RESPONSE((datetime.now() + timedelta(minutes=i)).strftime("%Y-%m-%d %H%M"), tid)
 
     with open(response_file, "w+") as file:
         file.write(response)
