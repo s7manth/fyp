@@ -1,6 +1,9 @@
 Create a multiple choice question (MCQ) and solution that covers one or more of the following topics:
-- Part-of-Speech Tagging
-- Named Entities and Named Entity Tagging
-- HMM Part-of-Speech Tagging
-- Conditional Random Fields (CRFs)
-- Evaluation of Named Entity Recognition
+- Semantic Roles
+- Diathesis Alternations
+- Semantic Roles: Problems with Thematic Roles
+- The Proposition Bank
+- Frame Net
+- Semantic Role Labeling
+- Selectional Restrictions
+- Primitive Decomposition of Predicates

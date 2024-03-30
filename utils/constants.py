@@ -98,5 +98,81 @@ topics = {
     - HMM Part-of-Speech Tagging
     - Conditional Random Fields (CRFs)
     - Evaluation of Named Entity Recognition
+    """,
+    "10": """
+    - Recurrent Neural Networks
+    - RNNs as Language Models
+    - RNNs for other NLP tasks
+    - Stacked and Bidirectional RNN architectures
+    - The LSTM
+    - Summary: Common RNN NLP Architectures
+    - The Encoder-Decoder Model with RNNs
+    """,
+    "15": """
+    - Constituency
+    - Context-Free Grammars
+    - Treebanks
+    - Grammar Equivalence and Normal Form
+    - Ambiguity
+    - CKY Parsing: A Dynamic Programming Approach
+    - Span-BasedNeuralConstituencyParsing
+    - Evaluating Parsers
+    - Heads and Head-Finding
+    """,
+    "16": """
+    - Dependency Relations
+    - Transition-Based Dependency Parsing
+    - Graph-Based Dependency Parsing
+    - Evaluation
+    """,
+    "17": """
+    - Relation Extraction
+    - Relation Extraction Algorithms
+    - Extracting Events
+    - Representing Time
+    - Representing Aspect
+    - Temporally Annotated Datasets: TimeBank
+    - Automatic Temporal Analysis
+    - Template Filling
+    """,
+    "18": """
+    - Semantic Roles
+    - Diathesis Alternations
+    - Semantic Roles: Problems with Thematic Roles
+    - The Proposition Bank
+    - Frame Net
+    - Semantic Role Labeling
+    - Selectional Restrictions
+    - Primitive Decomposition of Predicates
+    """,
+    "19": """
+    - Defining Emotion
+    - Available Sentiment and Affect Lexicons
+    - Creating Affect Lexicons by Human Labeling
+    - Semi-supervised Induction of Affect Lexicons
+    - Supervised Learning of Word Sentiment
+    - Using Lexicons for Sentiment Recognition
+    - Using Lexicons for Affect Recognition
+    - Lexicon-based methods for Entity-Centric Affect
+    - Connotation Frames
+    """,
+    "20": """
+    - Coreference Phenomena: Linguistic Background
+    - Coreference Tasks and Datasets
+    - Mention Detection
+    - Architectures for Coreference Algorithms
+    - Classifiers using hand-built features
+    - A neural mention-ranking algorithm
+    - Entity Linking
+    - Evaluation of Coreference Resolution.
+    - Winograd Schema problems
+    - Gender Bias in Coreference
+    """,
+    "21": """
+    - Coherence Relations
+    - Discourse Structure Parsing
+    - Centering and Entity-Based Coherence
+    - Representation learning models for local coherence
+    - Global Coherence
     """
 }
