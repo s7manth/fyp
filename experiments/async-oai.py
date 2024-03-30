@@ -3,8 +3,8 @@ import asyncio
 import time
 import aiohttp
 import os
+import math
 
-from itertools import islice
 from tqdm import tqdm
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
@@ -51,7 +51,7 @@ completions = []
 
 async def waiting_code(task, tries):
     try:
-        ans = await asyncio.wait_for(task, timeout=20)
+        ans = await asyncio.wait_for(task, timeout=15 * math.log(10 + tries, 10))
         return ans
     except:
         tries += 1
@@ -64,12 +64,13 @@ async def waiting_code(task, tries):
             print("ERROR: failed waiting")
             return []
 
-NUMBER_OF_COMPLETIONS_PER_TOPIC = 1
+NUMBER_OF_COMPLETIONS_PER_TOPIC = 10
 async def main():
     tasks = []
     tids = []
-    for tid, ts in islice(topics.items(), 15, 17):
-        print(f"INFO: generating for topics {ts}")
+    for tid, ts in topics.items():
+        if tid == "09": continue
+        print(f"INFO: generating for topics {tid} {ts}")
         for _ in range(NUMBER_OF_COMPLETIONS_PER_TOPIC):
             await asyncio.sleep(1)
             tasks.append(
