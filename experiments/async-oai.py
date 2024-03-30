@@ -51,11 +51,11 @@ completions = []
 
 async def waiting_code(task, tries):
     try:
-        ans = await asyncio.wait_for(task, timeout=15 * math.log(10 + tries, 10))
+        ans = await asyncio.wait_for(task, timeout=15 * math.log(10 + tries, 2))
         return ans
     except:
         tries += 1
-        if tries < 4:
+        if tries < 6:
             delay = 2 * (2 ** tries)
             time.sleep(delay)
             ans = await waiting_code(task, tries)
@@ -69,7 +69,6 @@ async def main():
     tasks = []
     tids = []
     for tid, ts in topics.items():
-        if tid == "09": continue
         print(f"INFO: generating for topics {tid} {ts}")
         for _ in range(NUMBER_OF_COMPLETIONS_PER_TOPIC):
             await asyncio.sleep(1)
