@@ -51,7 +51,7 @@ completions = []
 
 async def waiting_code(task, tries):
     try:
-        ans = await asyncio.wait_for(task, timeout=15 * math.log(10 + tries, 2))
+        ans = await asyncio.wait_for(task, timeout=20 * math.log(10 + tries, 2))
         return ans
     except:
         tries += 1
@@ -64,7 +64,7 @@ async def waiting_code(task, tries):
             print("ERROR: failed waiting")
             return []
 
-NUMBER_OF_COMPLETIONS_PER_TOPIC = 10
+NUMBER_OF_COMPLETIONS_PER_TOPIC = 20
 async def main():
     tasks = []
     tids = []
