@@ -64,7 +64,7 @@ async def waiting_code(task, tries):
             print("ERROR: failed waiting")
             return []
 
-NUMBER_OF_COMPLETIONS_PER_TOPIC = 20
+NUMBER_OF_COMPLETIONS_PER_TOPIC = 10
 async def main():
     tasks = []
     tids = []
