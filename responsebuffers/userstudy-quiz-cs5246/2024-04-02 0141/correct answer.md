@@ -1,0 +1,1 @@
+3. Naive Bayes is particularly efficient for sentiment analysis of movie reviews because it inherently handles data sparsity well and is computationally less demanding than MLP.

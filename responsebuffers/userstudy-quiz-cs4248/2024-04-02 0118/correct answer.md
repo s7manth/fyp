@@ -1,0 +1,1 @@
+2. By masking contiguous sequences of tokens, span-based masking encourages the model to learn higher-order dependencies between non-adjacent tokens, enhancing its ability to understand context.

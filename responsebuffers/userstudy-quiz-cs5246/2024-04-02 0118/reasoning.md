@@ -1,0 +1,6 @@
+The reasoning behind this choice is based on the broad coverage of date formats this regular expression offers. It has the capability to identify and remove:
+
+- Numeric dates of the form `dd-mm-yyyy` or `mm/dd/yy`, etc., with variance in the length of each component (i.e., one or two digits for day and month, two or four digits for the year) and the separators (either slashes or hyphens). This flexibility matches the common variations in which numeric dates are written.
+- Dates with abbreviated month names, which are common in textual data, especially informal text like customer reviews. The pattern attempts to catch these by matching the common starting letters of month names and their typical abbreviations.
+
+By being inclusive of both numeric and textually represented dates without imposing overly restrictive conditions (such as specific separators or exact month name spelling), this regular expression is most aligned with the need to cleanse a heterogeneous dataset of various date formats that could introduce noise into sentiment analysis.

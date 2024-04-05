@@ -1,0 +1,1 @@
+2. It will improve the model's ability to understand contextual dependencies across longer spans of text, potentially leading to more coherent summaries.

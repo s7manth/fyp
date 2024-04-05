@@ -1,0 +1,1 @@
+4. Involving medical professionals in the loop for validating and refining the model’s output before it is provided to end-users.

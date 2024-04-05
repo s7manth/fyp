@@ -1,0 +1,11 @@
+To evaluate each statement's correctness regarding improving model performance, let's analyze them in the context of using multinomial logistic regression with regularization and gradient descent optimization.
+
+1. **True.** L2 regularization penalizes the square of the magnitude of the weights, effectively preventing any single weight from having too disproportionate an impact on the model outcomes. This constraint can help in combating overfitting, especially in a scenario where the model complexity could lead to capturing noise in the linearly separable Class 1.
+
+2. **True.** L1 regularization encourages sparsity in the weight matrix, which can beneficially reduce model complexity by effectively performing feature selection. However, in cases where classes are not linearly separable (like Class 2 and Class 3), overly aggressive L1 regularization might result in the model losing critical information needed to distinguish between these classes, leading to poorer performance.
+
+3. **True.** Adjusting the learning rate is a common strategy to ensure that gradient descent moves steadily towards the minimum of the loss function. A lower learning rate can indeed prevent oscillations that might occur if the step size is too large, though at the cost of slower convergence.
+
+4. **False.** This statement is incorrect. A smaller step size (learning rate) in gradient descent makes the optimization process slower, not faster. While smaller step sizes can help in avoiding overshooting the minimum, they do not inherently accelerate convergence; rather, they can make the convergence process more gradual and potentially more stable.
+
+5. **True.** Elastic Net regularization combines the benefits of both L1 and L2 regularization, offering a compromise between feature selection (sparsity) and preventing large weights. This dual approach can be particularly beneficial in complex models attempting to balance between underfitting and overfitting, allowing for a fine-tuning of model complexity without overly favoring one form of regularization over the other.

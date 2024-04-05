@@ -1,0 +1,1 @@
+2. Applying Term Frequency-Inverse Document Frequency (TF-IDF) weighting.

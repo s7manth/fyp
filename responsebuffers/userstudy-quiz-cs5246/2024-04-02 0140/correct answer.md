@@ -1,0 +1,1 @@
+3. MLP is expected to have the highest accuracy but may require significantly more computational resources and data than Naive Bayes or Logistic Regression.

@@ -1,0 +1,1 @@
+2. Dependency Parsing to model the grammatical relationships between words in a sentence.

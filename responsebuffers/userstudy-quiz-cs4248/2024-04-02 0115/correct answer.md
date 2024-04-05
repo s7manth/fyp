@@ -1,0 +1,1 @@
+2. Incorporate an additional loss function that penalizes narrative incoherence directly, using an external coherence evaluation metric.

@@ -26,9 +26,6 @@ The question itself should meet the following criteria:
 - Incorporate both theoretical concepts and practical applications of natural language
   processing topics covered in the course.
 
-- Be of a high difficulty level, challenging students to apply their knowledge in novel
-  and complex scenarios, rather than relying on rote memorization or simple recall.
-
 - Require a unique synthesis of ideas from multiple topics, concepts, and sources,
   going beyond questions commonly found in standard textbooks.
 

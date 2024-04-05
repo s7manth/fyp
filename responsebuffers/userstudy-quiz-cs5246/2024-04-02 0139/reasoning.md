@@ -1,0 +1,1 @@
+4. Calculating the cosine similarity between the new article and every article in the training set, selecting the K articles with the highest similarity scores.

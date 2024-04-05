@@ -1,0 +1,1 @@
+3. In large datasets typical of NLP tasks, computing the gradient over the whole dataset can be computationally expensive; mini-batch gradient descent mitigates this by approximating the gradient over smaller subsets of the data, which accelerates convergence.

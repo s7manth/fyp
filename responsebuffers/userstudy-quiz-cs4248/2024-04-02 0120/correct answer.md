@@ -1,0 +1,1 @@
+3. The word itself, the orthographic features (e.g., capitalization, presence of dashes), and the surrounding bi-grams.

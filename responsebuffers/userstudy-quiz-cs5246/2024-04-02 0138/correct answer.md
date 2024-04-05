@@ -1,0 +1,1 @@
+4. The cosine similarity measure is generally more appropriate than Euclidean distance for text classification tasks because it accounts for the angle between text vectors, not the magnitude, which is more meaningful in high-dimensional spaces.

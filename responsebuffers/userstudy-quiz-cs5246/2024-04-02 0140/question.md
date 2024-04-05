@@ -1,0 +1,7 @@
+A data scientist is working on a text classification problem to categorize customer feedback into positive, neutral, and negative sentiments. The dataset contains text reviews and their corresponding sentiment labels. The scientist decides to use a Naive Bayes classifier but then considers experimenting with Logistic Regression and a Multi-Layer Perceptron (MLP) for potential performance improvements. Assuming all models are appropriately tuned and validated, and the data preprocessing involves standard steps like tokenization, stop word removal, and TF-IDF vectorization, which of the following statements best describes the expected performance of these models in terms of accuracy and computational efficiency?
+
+1. Naive Bayes is likely to outperform both Logistic Regression and MLP in terms of accuracy because it specifically handles text data well.
+2. Logistic Regression may outperform Naive Bayes and MLP because it can better handle the linear separability in high-dimensional spaces.
+3. MLP is expected to have the highest accuracy but may require significantly more computational resources and data than Naive Bayes or Logistic Regression.
+4. All three models are expected to perform equally well in terms of accuracy, but Naive Bayes will be the most computationally efficient.
+5. Logistic Regression and Naive Bayes are expected to have similar computational efficiency, but MLP will underperform due to overfitting on the training data.

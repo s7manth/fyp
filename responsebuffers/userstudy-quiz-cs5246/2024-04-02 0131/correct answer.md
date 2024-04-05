@@ -1,0 +1,1 @@
+4. Using dependency parsing, we can identify "sat" as the root of the sentence, with edges pointing to "cat" (subject) and "mat" (location), thus highlighting the action and the participants.

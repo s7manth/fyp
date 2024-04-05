@@ -1,0 +1,1 @@
+3. Utilizing dependency parsing to extract adjective-noun dependencies

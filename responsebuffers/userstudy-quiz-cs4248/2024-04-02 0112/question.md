@@ -1,0 +1,7 @@
+You are working on a sentiment analysis project focused on movie reviews. After training a logistic regression model using TF-IDF features, you decide to improve your model by incorporating word embeddings. You aim to compare the performance of TF-IDF features alone versus combining them with word embeddings derived from a Word2Vec model. Considering the properties of these two types of features, what is the most reasonable expectation regarding the potential impact on your model’s performance?
+
+1. TF-IDF features will likely render word embeddings redundant because they both capture term frequency in a similar manner.
+2. Word embeddings will improve the model significantly as they capture semantic relationships that TF-IDF does not, making the model more sensitive to nuanced expression in reviews.
+3. Combining TF-IDF with word embeddings will likely worsen the model's performance due to the introduction of noise from the high dimensional space of word embeddings.
+4. The impact of adding word embeddings to the TF-IDF features will solely depend on the dimensionality of the embeddings, with lower dimensions always leading to improved performance.
+5. The combination of TF-IDF and word embeddings will not affect the model's performance, as logistic regression cannot effectively utilize the semantic information captured by embeddings.

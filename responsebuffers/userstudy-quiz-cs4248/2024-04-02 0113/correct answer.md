@@ -1,0 +1,1 @@
+4. Dropout was not applied, leading to overfitting on the training data.

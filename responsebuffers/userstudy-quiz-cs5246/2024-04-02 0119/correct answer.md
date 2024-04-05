@@ -1,0 +1,1 @@
+5. Conduct dependency parsing to identify relationships between nouns and adjectives/adverbs, and apply WordNet to discern the semantic orientation (positive or negative) of the adjectives/adverbs related to the product.

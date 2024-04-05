@@ -1,0 +1,1 @@
+3. A Naive Bayes classifier given its assumption of feature independence and success in text classifications

@@ -1,0 +1,1 @@
+4. Applying gradient descent with a very small step size could accelerate convergence by making the optimization process more responsive to changes in the loss landscape.

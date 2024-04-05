@@ -5,24 +5,33 @@ import aiohttp
 import os
 import math
 
+from itertools import islice
 from tqdm import tqdm
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
 load_dotenv(".env")
 
-from constants import topics
+from constants import topics, topics_5246, taxonomy
 
 # constants
 MODEL = "gpt-4-0125-preview"
 
-SYSTEM_PROMPT = "./prompts/zeroshot-vanilla-system-prompt.txt"
-USER_PROMPT = "./prompts/zeroshot-vanilla-user-prompt-template.txt"
+MODULE = "4248"
+
+SYSTEM_PROMPT = f"./prompts/blooms-taxonomy-system-prompt-{MODULE}.txt"
+USER_PROMPT = "./prompts/blooms-taxonomy-user-prompt-template.txt"
+
+# SYSTEM_PROMPT = "./prompts/zeroshot-vanilla-system-prompt-5246.txt"
+# USER_PROMPT = "./prompts/zeroshot-vanilla-user-prompt-template.txt"
 
 # TEMPERATURE = 1.0
 TOP_P = 0.9
 MAX_TOKENS = 4096
 
-RESPONSE = lambda timestamp, tid: f"./responsebuffers/zeroshot-vanilla-gpt4/{tid}/{timestamp}.md"
+MAIN_FOLDER = f"blooms-{MODULE}"
+
+RESPONSE = lambda timestamp, tid, tax: f"./responsebuffers/blooms-{MODULE}/{tid}/{tax}/{timestamp}.md"
+# RESPONSE = lambda timestamp, tid: f"./responsebuffers/{MAIN_FOLDER}/{tid}/{timestamp}.md"
 
 # read in the prompt files
 system_prompt = str()
@@ -44,9 +53,6 @@ def backoff_delay(backoff_factor, attempts):
     delay = backoff_factor * (2 ** attempts)
     return delay
 
-def retry_request():
-    pass
-
 completions = []
 
 async def waiting_code(task, tries):
@@ -64,13 +70,56 @@ async def waiting_code(task, tries):
             print("ERROR: failed waiting")
             return []
 
-NUMBER_OF_COMPLETIONS_PER_TOPIC = 10
+# NUMBER_OF_COMPLETIONS_PER_TOPIC = 1
+# async def main():
+#     tasks = []
+#     tids = []
+#     for tid, ts in topics_5246.items():
+#         print(f"INFO: generating for topics {tid} {ts}")
+#         for _ in range(NUMBER_OF_COMPLETIONS_PER_TOPIC):
+#             await asyncio.sleep(1)
+#             tasks.append(
+#                 asyncio.create_task(
+#                     client.chat.completions.create(
+#                         model=MODEL,
+#                         messages=[
+#                             {
+#                                 "role": "system",
+#                                 "content": system_prompt,
+#                             },
+#                             {
+#                                 "role": "user",
+#                                 "content": user_prompt + ts,
+#                             }
+#                         ]
+#                     )
+#                 )
+#             )
+#             tids.append(tid)
+
+#     try:
+#         for coro, tid in tqdm(zip(tasks, tids), total=len(tasks)):
+#             completion = await waiting_code(coro, 0)
+#             completions.append({
+#                 "completion": completion,
+#                 "tid": tid
+#             })
+
+#         return completions
+#     except:
+#         print("ERROR: something went wrong lmao")
+
+# blooms taxonomy
 async def main():
     tasks = []
     tids = []
+    taxs = []
     for tid, ts in topics.items():
         print(f"INFO: generating for topics {tid} {ts}")
-        for _ in range(NUMBER_OF_COMPLETIONS_PER_TOPIC):
+        if tid not in {"03", "02", "15"}: continue
+        for tax in taxonomy:
+            up = user_prompt.replace("{taxonomy}", f"**{tax}**")
+            up = up.replace("{topics}", ts)
             await asyncio.sleep(1)
             tasks.append(
                 asyncio.create_task(
@@ -83,25 +132,29 @@ async def main():
                             },
                             {
                                 "role": "user",
-                                "content": user_prompt + ts,
+                                "content": up,
                             }
                         ]
                     )
                 )
             )
             tids.append(tid)
+            taxs.append(tax)
 
     try:
-        for coro, tid in tqdm(zip(tasks, tids), total=len(tasks)):
+        for coro, tid, tax in tqdm(zip(tasks, tids, taxs), total=len(tasks)):
             completion = await waiting_code(coro, 0)
             completions.append({
                 "completion": completion,
-                "tid": tid
+                "tid": tid,
+                "tax": tax
             })
 
         return completions
     except:
         print("ERROR: something went wrong lmao")
+
+
 
 loop = asyncio.new_event_loop()
 completions = loop.run_until_complete(main())
@@ -109,12 +162,14 @@ completions = loop.run_until_complete(main())
 for i, cobj in enumerate(completions):
     completion = cobj["completion"]
     tid = cobj["tid"]
+    tax = cobj["tax"]
 
     if completion == []: continue
 
     response = str(completion.choices[0].message.content)
-    response_file = RESPONSE((datetime.now() + timedelta(minutes=i)).strftime("%Y-%m-%d %H%M"), tid)
+    response_file = RESPONSE((datetime.now() + timedelta(minutes=40)).strftime("%Y-%m-%d %H%M"), tid, tax)
 
+    os.mkdir(f"./responsebuffers/{MAIN_FOLDER}/{tid}/{tax}")
     with open(response_file, "w+") as file:
         file.write(response)
 

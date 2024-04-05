@@ -1,0 +1,1 @@
+2. Implement a weighted voting system where closer neighbors have more influence on the classification decision than farther ones.

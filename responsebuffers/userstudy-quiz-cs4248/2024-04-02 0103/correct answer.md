@@ -1,0 +1,1 @@
+3. Normalize spelling variations (e.g., "E-mail" to "Email"), apply lowercasing, and then perform word tokenization.

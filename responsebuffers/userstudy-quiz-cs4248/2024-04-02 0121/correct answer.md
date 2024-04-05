@@ -1,0 +1,1 @@
+3. Incorporating attention mechanisms in both the encoder and decoder to enhance the model's focus on relevant parts of the input sentence throughout the translation.

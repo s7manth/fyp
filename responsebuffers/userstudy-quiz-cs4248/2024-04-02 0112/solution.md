@@ -1,0 +1,7 @@
+To solve this question correctly, a deep understanding of how TF-IDF and word embeddings work, as well as their impact on sentiment analysis tasks, is necessary.
+
+- TF-IDF (Term Frequency-Inverse Document Frequency) is a numerical statistic intended to reflect the importance of a word to a document in a collection or corpus. It increases proportionally to the number of times a word appears in the document but is offset by the frequency of the word in the corpus, which helps to adjust for the fact that some words appear more frequently in general.
+  
+- Word embeddings are dense vectors of real numbers, one per word in your dataset. The dimension of the vector is much smaller than the original vocabulary. Word2Vec, in particular, captures a word's meaning, syntactical relationships, and the context in which words appear. Words that are used in similar contexts tend to have similar meanings and, hence, similar embeddings.
+
+Answering the question, option 2 is the most reasonable expectation. Word embeddings will improve the model significantly as they can capture semantic relationships and nuances in the language that TF-IDF does not. While TF-IDF captures the importance of terms in a document collection, it does not understand the context or the semantic relationships between words. Word embeddings complement TF-IDF by providing this missing element, which is particularly useful in sentiment analysis where understanding context and semantic nuance is critical.

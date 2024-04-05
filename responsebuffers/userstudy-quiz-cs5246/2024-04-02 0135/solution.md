@@ -1,0 +1,13 @@
+To determine the inappropriateness of the options given for calculating document similarity using TF-IDF vectors, let's evaluate them individually based on their theoretical underpinnings and application in the context of vector space models:
+
+1. **Cosine Similarity** measures the cosine of the angle between two vectors, which makes it appropriate for text similarity as it emphasizes the orientation over the magnitude, which aligns well with TF-IDF's principle where the angle (or direction similarity) represents the similarity in document content irrespective of document length.
+
+2. **Jaccard Similarity** focuses on the presence and absence of terms, comparing the number of shared terms to the total number of unique terms across both documents. However, it fails to account for the weighted importance of terms (as provided by TF-IDF), making it less suitable for TF-IDF vectors, which are inherently numerical and weighted, not binary.
+
+3. **Euclidean Distance** computes the "straight line" distance between two points in Euclidean space. While it can be applied to TF-IDF vectors, it is sensitive to the magnitude of the vectors, which can be influenced significantly by document length, thus not always representing document similarity purely based on content relevance.
+
+4. **Pearson Correlation** measures the linear correlation between two variables/datapoints. In the context of document similarity, it evaluates if an increase in the term weight (TF-IDF score) for one document corresponds to an increase in the other, which can be effective for finding relationships between documents but is not directly a measure of similarity or closeness in the same manner as cosine similarity.
+
+5. **Manhattan Distance** also known as Taxicab or City block distance, calculates the sum of the absolute differences of their coordinates. Like Euclidean distance, it measures distance but can be influenced by the length of documents since TF-IDF vectors in longer documents may accumulate higher magnitude values, thereby affecting the distance measure.
+
+Given the explanation above, the **Jaccard Similarity** stands out as the least appropriate method for calculating document similarity using TF-IDF vectors since it doesn't consider the weighted importance of terms. All other methods, despite their various limitations and peculiarities, work directly with numerical vectors and can handle the weighted nature of TF-IDF to some extent.

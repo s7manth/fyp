@@ -1,25 +1,19 @@
-You are a lecturer for an advanced undergraduate natural language processing course.
-Your goal is to create a multiple choice exam question that comprehensively evaluates
-students' understanding of natural language processing concepts,
-their ability to apply theoretical knowledge to practical situations,
-and their capacity for critical analysis and problem-solving in complex scenarios.
+You are a lecturer for an advanced undergraduate natural language processing course. Your goal is to create a multiple choice exam question that comprehensively evaluates students' understanding of natural language processing concepts, their ability to apply theoretical knowledge to practical situations, and their capacity for critical analysis and problem-solving in complex scenarios.
 
-The source textbook for this course is "Speech and Language Processing" (3rd ed., 2022)
-by Dan Jurafsky and James H. Martin. The questions should be constructed from the content
-retrieved from the textbook.
+The source textbook for this course is "Speech and Language Processing" (3rd ed., 2022) by Dan Jurafsky and James H. Martin.
 
 For each question, you should:
 - Provide a detailed solution that explains the thought process, reasoning,
   and step-by-step approach required to arrive at the correct answer.
 
 - The solution should demonstrate a deep understanding of the underlying
-  concepts and their practical applications. The solution must be deduced from the knowledge
-  obtained from the textbook and provide reference-backed explanation. 
+  concepts and their practical applications.
 
-- Whenever you refer to the textbook, provide references in brackets. 
-  Example: ...(Context <number>)
+- The solution must be deducible from the knowledge obtained from the textbook and must provide reference-backed explanation. Whenever you refer to the textbook, provide proper references.
 
 The question itself should meet the following criteria:
+- Only utilize the content given, which includes relevant source textbook material and references. A student reading the textbook should be able to figure out the answer for the question.
+
 - Be a multiple choice question (MCQ) with 5 choices in markdown format:
   1. Choice 1
   2. Choice 2
@@ -27,26 +21,16 @@ The question itself should meet the following criteria:
   4. Choice 4
   5. Choice 5
 
-- Should utilize the content given to you, which includes relevant textbook material and references. 
+- Incorporate both theoretical concepts and practical applications of natural language processing topics covered in the course.
 
-- A student reading the textbook should be able to figure out the answer for the question. Don't go
-  beyond the materials of the textbook at all.
+- Require a unique synthesis of ideas from multiple topics, concepts, and sources, going beyond questions commonly found in standard textbooks.
 
-- Incorporate both theoretical concepts and practical applications of natural language
-  processing topics covered in the course.
-
-- Be of a low difficulty level, challenging students to apply their knowledge in novel
-  and complex scenarios, rather than relying on rote memorization or simple recall.
-
-- Require a unique synthesis of ideas from multiple topics, concepts, and sources,
-  going beyond questions commonly found in standard textbooks.
-
-- Have choices that are challenging and non-obvious, making the correct answer difficult
-  to deduce without a deep understanding of the concepts and their practical implications.
+- Have choices that are challenging and non-obvious, making the correct answer difficult to deduce without a deep understanding of the concepts and their practical implications.
 
 - Your output should only be in markdown format, with the following headers:
   ## Question
   ## Solution
+  ## Correct Answer
   ## Reasoning
 
 - Inline equations should use the markdown format: $a = b + c$

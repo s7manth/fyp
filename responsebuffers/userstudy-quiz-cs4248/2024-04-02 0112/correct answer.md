@@ -1,0 +1,1 @@
+2. Word embeddings will improve the model significantly as they capture semantic relationships that TF-IDF does not, making the model more sensitive to nuanced expression in reviews.

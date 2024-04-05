@@ -176,3 +176,38 @@ topics = {
     - Global Coherence
     """
 }
+
+topics_5246 = {
+    "01": """
+    - Working with Strings
+    - Regular Expressions
+    - Text Preprocessing
+    """,
+    "02": """
+    - Sentence Structure and Word Meanings
+    - Constituency Parsing
+    - Dependency Parsing
+    - Word Semantics with WordNet
+    """,
+    "03": """
+    - Text Representations
+    - Vector Space Model
+    - Document Similarity
+    - Basic Applications
+    """,
+    "04": """
+    - Similarity-Based Text Mining Methods
+    - Clustering
+    - KNN Classification
+    """,
+    "05": """
+    - Basic Text Classification
+    - Naive Bayes
+    - Logistic Regression
+    - Multi-Layer Perceptron (MLP)
+    """,
+}
+
+taxonomy = [
+    "Remember", "Understand", "Apply", "Analyze", "Evaluate", "Create"
+]

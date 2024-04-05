@@ -1,0 +1,1 @@
+3. Constituency Parsing would organize the sentence into a tree structure based on syntactic categories, while Dependency Parsing would illustrate the grammatical relations and dependencies between words.

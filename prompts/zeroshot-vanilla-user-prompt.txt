@@ -1,9 +1,0 @@
-Create a multiple choice question (MCQ) and solution that covers one or more of the following topics:
-- Semantic Roles
-- Diathesis Alternations
-- Semantic Roles: Problems with Thematic Roles
-- The Proposition Bank
-- Frame Net
-- Semantic Role Labeling
-- Selectional Restrictions
-- Primitive Decomposition of Predicates

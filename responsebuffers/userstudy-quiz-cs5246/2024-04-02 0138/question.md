@@ -1,0 +1,9 @@
+A data scientist is working on a text mining project to classify customer reviews for a new product into different sentiment categories (e.g., positive, neutral, negative). The dataset consists of 10,000 reviews, and the scientist decides to use the K-Nearest Neighbors (KNN) algorithm for this classification task. However, the scientist is aware that choosing the right value for $k$ (the number of nearest neighbors) and an appropriate similarity measure are crucial for the algorithm's performance.
+
+Which of the following statements best reflects the considerations the data scientist should take into account when configuring the KNN algorithm for this specific task?
+
+1. A small value of $k$ is preferable as it will ensure that the model captures the majority sentiment in the dataset, minimizing the influence of outliers.
+2. Choosing a high value for $k$ may lead to better classification accuracy because it reduces the noise in the classification process.
+3. The Euclidean distance is always the best choice for computing similarity in text classification tasks since it effectively captures the linear distance between text samples.
+4. The cosine similarity measure is generally more appropriate than Euclidean distance for text classification tasks because it accounts for the angle between text vectors, not the magnitude, which is more meaningful in high-dimensional spaces.
+5. Both Jaccard similarity and Manhattan distance are equally effective in all scenarios of text mining, including sentiment analysis, as they treat all features equally without considering the specific nature of text data.

@@ -1,0 +1,1 @@
+3. Ensuring that all text data are normalized to have a uniform length before TF-IDF vectorization.

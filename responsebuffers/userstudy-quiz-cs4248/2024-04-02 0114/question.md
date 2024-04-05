@@ -1,0 +1,7 @@
+Which of the following statements accurately describes a key challenge when using gradient descent for training a neural network designed for natural language processing (NLP) tasks, and how does the chosen optimization method address this challenge?
+
+1. Gradient descent can get stuck in local minima; using stochastic gradient descent (SGD) introduces randomness in the sampling of data points, which can help escape local minima by following a more volatile path toward the global minimum.
+2. The learning rate in gradient descent needs to be manually adjusted throughout training; adaptive learning rate methods like Adam adjust the learning rate dynamically, based on the gradients' magnitude, to achieve more efficient learning.
+3. In large datasets typical of NLP tasks, computing the gradient over the whole dataset can be computationally expensive; mini-batch gradient descent mitigates this by approximating the gradient over smaller subsets of the data, which accelerates convergence.
+4. The vanishing gradient problem makes it difficult to learn long-range dependencies in sequence data; L2 regularization directly addresses this by penalizing large weights, thus ensuring smoother gradient flow.
+5. Gradient descent is biased towards frequent features in the dataset; contrastive divergence adjusts weights in a way that emphasizes less frequent, but potentially more informative features, improving model generalization.

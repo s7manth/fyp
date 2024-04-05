@@ -1,0 +1,1 @@
+4. An Encoder-Decoder model with LSTM as both encoder and decoder units.
